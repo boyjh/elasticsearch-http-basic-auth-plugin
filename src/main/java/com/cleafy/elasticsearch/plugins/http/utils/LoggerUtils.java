@@ -36,6 +36,6 @@ public class LoggerUtils {
     }
 
     private static InetAddress getAddress(RestRequest request) {
-        return ((InetSocketAddress) request.getHttpChannel().getRemoteAddress()).getAddress();
+        return ((InetSocketAddress) request.getRemoteAddress()).getAddress();
     }
 }
