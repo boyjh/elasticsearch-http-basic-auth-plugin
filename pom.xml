@@ -21,14 +21,14 @@
         <dependency>
             <groupId>org.elasticsearch</groupId>
             <artifactId>elasticsearch</artifactId>
-            <version>7.6.0</version>
+            <version>6.2.4</version>
             <scope>provided</scope>
         </dependency>
 
         <dependency>
             <groupId>org.elasticsearch.test</groupId>
             <artifactId>framework</artifactId>
-            <version>7.6.0</version>
+            <version>6.2.4</version>
             <scope>test</scope>
         </dependency>
         <dependency>

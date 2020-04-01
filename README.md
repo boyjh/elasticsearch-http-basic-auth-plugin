@@ -17,7 +17,9 @@ There is no way to configure this on a per index basis.
 |     Http Basic Plugin       | elasticsearch                |
 |-----------------------------|------------------------------|
 | v0.0.1                      |                        6.3.2 |
+| v0.0.2                      |                        6.2.4 |
 | v0.1.0                      |                        7.6.0 |
+
 
 
 ## Installation
@@ -31,7 +33,7 @@ Once the plugin is installed it can be configured in the [elasticsearch modules 
 |     Setting key                   |  Default value               | Notes                                                                   |
 |-----------------------------------|------------------------------|-------------------------------------------------------------------------|
 | `http.basic.enabled`              | true                         | **true** disables the default ES HTTP Transport module                  |
-| `http.basic.user`                 | "admin"                      |                                                                         |
+| `http.basic.username`                 | "admin"                      |                                                                         |
 | `http.basic.password`             | "admin_pw"                   |                                   
 | `http.basic.log`                  | false                        | enables plugin logging to ES log. Unauthenticated requests are always logged.                                         |
 
@@ -46,9 +48,9 @@ see [this article](https://en.wikipedia.org/wiki/Basic_access_authentication)
 The following code enables plugin logging, sets user and password.
 
 ```
-http.basic.enable: true
+http.basic.enabled: true
 http.basic.log: true
-http.basic.user: "some_user"
+http.basic.username: "some_user"
 http.basic.password: "some_password"
 ```
 
